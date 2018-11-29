@@ -9,7 +9,7 @@ def getSecretNum(numDigits):
     return secretNum
 
 def getClues(guess, secretNum):
-    # Retunrs a string with pico, fermi, bagels clues to the user
+    # Returns a string with pico, fermi, bagels clues to the user
     if guess == secretNum:
         return 'You Got it!'
 
@@ -24,7 +24,7 @@ def getClues(guess, secretNum):
         return 'Bagels'
 
     clue.sort()
-    return ' '.join(clue)
+    return ' '.join(clue) # joins the split random number together without spaces.
 
 def isOnlyDigits(num):
     # Returns True if num is a string made up of digits only. Otherwise returns false.
@@ -68,7 +68,7 @@ while True:
         numGuesses += 1
 
         if guess == secretNum:
-            break
+            breaka
         if numGuesses > MAXGUESS:
             print('You ran out of guesses. The answer was %s.' %(secretNum))
 
