@@ -33,7 +33,7 @@ def isOnlyDigits(num):
 
     for i in num:
         if i not in '0 1 2 3 4 5 6 7 8 9'.split():
-            return False
+            return False # if not a digit in list or not a digit loops guess ie abc or 8910 (as 10 is not in list)'
 
     return True
 
